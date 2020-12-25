@@ -6,8 +6,8 @@ TABLE = "actions"
 CREATE = f"""
 CREATE TABLE IF NOT EXISTS {TABLE} (
     ip_address TEXT,
-    action TEXT,
-    timestamp TEXT
+    action TEXT NOT NULL,
+    timestamp TEXT NOT NULL
 );
 """
 DROP = f"DROP TABLE IF EXISTS {TABLE}"
